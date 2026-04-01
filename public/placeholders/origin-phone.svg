@@ -1,0 +1,21 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" rx="48" fill="#0E141C"/>
+  <circle cx="920" cy="178" r="180" fill="#203144"/>
+  <circle cx="920" cy="178" r="180" fill="url(#paint0_radial)" fill-opacity="0.72"/>
+  <rect x="402" y="138" width="334" height="624" rx="36" fill="#101822" stroke="#D9E2EF" stroke-opacity="0.18" stroke-width="4"/>
+  <rect x="428" y="188" width="282" height="472" rx="18" fill="#162434"/>
+  <path d="M472 312C472 282.177 496.177 258 526 258H612C641.823 258 666 282.177 666 312V354H472V312Z" fill="#D6935D" fill-opacity="0.9"/>
+  <rect x="472" y="386" width="194" height="18" rx="9" fill="#EADFD2" fill-opacity="0.68"/>
+  <rect x="472" y="428" width="154" height="18" rx="9" fill="#EADFD2" fill-opacity="0.34"/>
+  <rect x="472" y="486" width="194" height="18" rx="9" fill="#7A91AE" fill-opacity="0.58"/>
+  <rect x="472" y="528" width="128" height="18" rx="9" fill="#7A91AE" fill-opacity="0.34"/>
+  <path d="M258 620C378.306 547.754 516.532 520.697 671.5 538.828C802.198 554.13 905.698 602.187 982 683" stroke="#D6935D" stroke-opacity="0.36" stroke-width="2" stroke-dasharray="8 12"/>
+  <text x="112" y="156" fill="#F2E6D8" fill-opacity="0.88" font-family="Georgia, serif" font-size="52" letter-spacing="4">LEARNING ON A PHONE</text>
+  <text x="112" y="224" fill="#F2E6D8" fill-opacity="0.42" font-family="Arial, sans-serif" font-size="24" letter-spacing="6">PLACEHOLDER VISUAL</text>
+  <defs>
+    <radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(920 178) rotate(90) scale(180)">
+      <stop stop-color="#8DA7CC"/>
+      <stop offset="1" stop-color="#203144" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+</svg>

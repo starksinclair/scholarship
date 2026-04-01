@@ -1,0 +1,21 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" rx="48" fill="#10151D"/>
+  <path d="M112 118H1088" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="2"/>
+  <path d="M112 224H1088" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="2"/>
+  <path d="M112 330H1088" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="2"/>
+  <path d="M112 436H1088" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="2"/>
+  <path d="M112 542H1088" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="2"/>
+  <path d="M112 648H1088" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="2"/>
+  <path d="M250 96V786" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="2"/>
+  <path d="M430 96V786" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="2"/>
+  <path d="M610 96V786" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="2"/>
+  <path d="M790 96V786" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="2"/>
+  <path d="M970 96V786" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="2"/>
+  <circle cx="340" cy="372" r="14" fill="#6A86AA"/>
+  <circle cx="570" cy="504" r="14" fill="#6A86AA"/>
+  <circle cx="808" cy="304" r="14" fill="#D6935D"/>
+  <circle cx="936" cy="610" r="14" fill="#D6935D"/>
+  <path d="M340 372L570 504L808 304L936 610" stroke="#F2E6D8" stroke-opacity="0.46" stroke-width="3" stroke-dasharray="10 10"/>
+  <text x="110" y="156" fill="#F2E6D8" fill-opacity="0.88" font-family="Georgia, serif" font-size="52" letter-spacing="4">THE BARRIER WAS ACCESS</text>
+  <text x="110" y="224" fill="#F2E6D8" fill-opacity="0.42" font-family="Arial, sans-serif" font-size="24" letter-spacing="6">PLACEHOLDER MAP / INFRASTRUCTURE VISUAL</text>
+</svg>

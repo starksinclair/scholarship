@@ -1,65 +1,85 @@
-import Image from "next/image";
+import {
+  accessStats,
+  focusAreas,
+  founderClose,
+  founderMetrics,
+  proofItems,
+  scholarshipSpec,
+  storyScenes,
+} from "@/lib/content/site";
+import { AccessStatsSection } from "@/components/story/access-stats-section";
+import { ChapterSection } from "@/components/story/chapter-section";
+import { DownloadPdfButton } from "@/components/story/download-pdf-button";
+import { FounderClose } from "@/components/story/founder-close";
+import { Hero } from "@/components/story/hero";
+import { InfrastructureCharts } from "@/components/story/infrastructure-charts";
+import { MetricsBand } from "@/components/story/metrics-band";
+import { OutcomeSection } from "@/components/story/outcome-section";
+import { ProofGrid } from "@/components/story/proof-grid";
+import { ScholarshipSections } from "@/components/story/scholarship-sections";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
+   <>
+    <main className="bg-background text-foreground">
+      <Hero metrics={founderMetrics} />
+
+      <div className="relative z-10">
+        <div className="mx-auto flex max-w-7xl flex-col gap-0 px-6 pb-24 md:px-10 lg:px-16">
+          {storyScenes.map((scene, index) => (
+            <ChapterSection
+              key={scene.id}
+              scene={scene}
+              priority={index === 0}
+              id={index === 0 ? "story" : scene.id}
             />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+          ))}
         </div>
-      </main>
-    </div>
+
+        <MetricsBand metrics={founderMetrics} />
+
+        <div className="mx-auto max-w-7xl px-6 py-24 md:px-10 lg:px-16">
+          <ProofGrid items={proofItems} />
+        </div>
+
+        <AccessStatsSection stats={accessStats} />
+
+        <InfrastructureCharts />
+
+        <ScholarshipSections
+          focusAreas={focusAreas}
+          scholarshipSpec={scholarshipSpec}
+        />
+
+        <OutcomeSection scholarshipSpec={scholarshipSpec} />
+
+        <section className="border-y border-white/10 bg-[linear-gradient(180deg,rgba(14,11,10,0.98),rgba(12,13,16,0.98))]">
+          <div className="mx-auto max-w-7xl px-6 py-24 md:px-10 lg:px-16">
+            <p className="text-xs uppercase tracking-[0.32em] text-white/44">
+              Application essay question
+            </p>
+            <blockquote className="mt-6 max-w-4xl border-l-2 border-(--signal-amber) pl-6 font-display text-[clamp(2.4rem,5vw,4.8rem)] leading-[0.96] tracking-[-0.03em] text-(--signal-cream)">
+              &ldquo;{scholarshipSpec.proposalQuestion}&rdquo;
+            </blockquote>
+            <p className="mt-8 max-w-2xl text-base leading-8 text-white/60">
+              Every applicant answers this single question with a written essay
+              and a working prototype or project. The answer is the application.
+            </p>
+            <div className="mt-10">
+              <DownloadPdfButton />
+            </div>
+          </div>
+        </section>
+
+        <FounderClose founderClose={founderClose} />
+      </div>
+     
+    </main>
+     <footer>
+     <div className="text-center text-sm text-white/50 py-4">
+       <p>Copyright © {new Date().getFullYear()} <a href="https://www.sinclairnzenwata.com" target="_blank" style={{ textDecoration: "underline" }} rel="noopener noreferrer" className="text-white/70 hover:text-white">Sinclair Nzenwata</a>. All rights reserved. </p>
+     </div>
+   </footer>
+   </>
   );
 }

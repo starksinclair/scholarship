@@ -1,0 +1,12 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" rx="48" fill="#1A1411"/>
+  <circle cx="250" cy="604" r="186" fill="#314356"/>
+  <circle cx="928" cy="248" r="224" fill="#D6935D" fill-opacity="0.18"/>
+  <path d="M278 624C496.918 404.105 686.252 274.105 846 234C894.819 221.749 959.486 225.748 1040 246" stroke="#F2E6D8" stroke-opacity="0.6" stroke-width="4" stroke-dasharray="10 10"/>
+  <circle cx="278" cy="624" r="28" fill="#6A86AA"/>
+  <circle cx="1040" cy="246" r="28" fill="#D6935D"/>
+  <text x="108" y="156" fill="#F2E6D8" fill-opacity="0.88" font-family="Georgia, serif" font-size="52" letter-spacing="4">GLOBAL EDUCATION AS ACCESS</text>
+  <text x="108" y="224" fill="#F2E6D8" fill-opacity="0.42" font-family="Arial, sans-serif" font-size="24" letter-spacing="6">PLACEHOLDER PATH VISUAL</text>
+  <text x="220" y="690" fill="#F2E6D8" fill-opacity="0.74" font-family="Arial, sans-serif" font-size="28" letter-spacing="4">NIGERIA</text>
+  <text x="958" y="204" fill="#F2E6D8" fill-opacity="0.74" font-family="Arial, sans-serif" font-size="28" letter-spacing="4">U.S.</text>
+</svg>

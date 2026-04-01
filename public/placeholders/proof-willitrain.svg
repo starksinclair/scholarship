@@ -1,0 +1,10 @@
+<svg width="1000" height="750" viewBox="0 0 1000 750" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1000" height="750" rx="40" fill="#0F151E"/>
+  <rect x="384" y="102" width="232" height="546" rx="38" fill="#151F2A" stroke="#FFFFFF" stroke-opacity="0.12" stroke-width="3"/>
+  <rect x="410" y="154" width="180" height="384" rx="22" fill="#203A54"/>
+  <circle cx="500" cy="262" r="54" fill="#D6935D" fill-opacity="0.9"/>
+  <path d="M448 372H552" stroke="#F2E6D8" stroke-opacity="0.76" stroke-width="18" stroke-linecap="round"/>
+  <path d="M448 416H520" stroke="#F2E6D8" stroke-opacity="0.34" stroke-width="14" stroke-linecap="round"/>
+  <rect x="440" y="570" width="120" height="16" rx="8" fill="#F2E6D8" fill-opacity="0.18"/>
+  <text x="116" y="120" fill="#F2E6D8" fill-opacity="0.82" font-family="Georgia, serif" font-size="42" letter-spacing="3">WILLITRAIN</text>
+</svg>
