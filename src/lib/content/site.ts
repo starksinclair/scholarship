@@ -63,10 +63,9 @@ export const storyScenes: StoryScene[] = [
     theme: "steel",
     align: "right",
     media: {
-      src: "/placeholders/access-grid.svg",
-      alt: "Placeholder artwork representing infrastructure barriers",
-      label:
-        "Swap in a Nigeria-focused map or a personal supporting visual later.",
+      src: "/main/access.jpg",
+      alt: "A photo of a person thinking about how to get a computer",
+      label: "This was me thinking about how to get a computer.",
     },
   },
   {
@@ -183,8 +182,7 @@ export const accessStats: AccessStat[] = [
     context:
       "Out of a population of 226.5 million, approximately 123.4 million Nigerians had no internet access at the start of 2024 — the fourth-largest offline population in the world.",
     source: "DataReportal, Digital 2024: Nigeria",
-    sourceUrl:
-      "https://www.datareportal.com/reports/digital-2024-nigeria",
+    sourceUrl: "https://www.datareportal.com/reports/digital-2024-nigeria",
   },
   {
     value: "2×",
@@ -192,8 +190,7 @@ export const accessStats: AccessStat[] = [
     context:
       "A basic 2 GB mobile data plan costs 4.2% of gross national income per capita — more than double the UN Broadband Commission's 2% affordability target.",
     source: "The Borgen Project / ITU Facts and Figures 2024",
-    sourceUrl:
-      "https://borgenproject.org/internet-access-in-nigeria/",
+    sourceUrl: "https://borgenproject.org/internet-access-in-nigeria/",
   },
   {
     value: "48.8%",

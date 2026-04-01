@@ -15,10 +15,10 @@ export function ScholarshipSections({
       <section className="border-y border-white/10 bg-[linear-gradient(180deg,rgba(18,13,12,0.96),rgba(20,14,12,0.94))]">
         <div className="mx-auto max-w-7xl px-6 py-24 md:px-10 lg:px-16">
           <MotionInView className="max-w-4xl">
-            <p className="text-xs uppercase tracking-[0.32em] text-white/44">
+            {/* <p className="text-xs uppercase tracking-[0.32em] text-white/44">
               Scholarship thesis
-            </p>
-            <h2 className="mt-5 font-display text-[clamp(3.4rem,7vw,6.6rem)] leading-[0.9] tracking-[-0.04em] text-[var(--signal-cream)]">
+            </p> */}
+            <h2 className="mt-5 font-display text-[clamp(3.4rem,7vw,6.6rem)] leading-[0.9] tracking-[-0.04em] text-(--signal-cream)">
               {scholarshipSpec.thesis}
             </h2>
             <p className="mt-8 max-w-3xl text-lg leading-8 text-white/70">
@@ -37,32 +37,32 @@ export function ScholarshipSections({
             <p className="text-xs uppercase tracking-[0.32em] text-white/44">
               Structure
             </p>
-            <h2 className="mt-4 font-display text-5xl leading-[0.94] tracking-[-0.03em] text-[var(--signal-cream)] md:text-6xl">
+            <h2 className="mt-4 font-display text-5xl leading-[0.94] tracking-[-0.03em] text-(--signal-cream) md:text-6xl">
               Fund the tools. Back the builders. Require something real at the
               end.
             </h2>
             <div className="mt-8 grid gap-4 sm:grid-cols-3">
-              <div className="rounded-[1.6rem] border border-white/10 bg-white/[0.03] p-5">
+              <div className="rounded-[1.6rem] border border-white/10 bg-white/3 p-5">
                 <p className="text-xs uppercase tracking-[0.28em] text-white/42">
                   Annual cohort
                 </p>
-                <p className="mt-2 font-display text-5xl text-[var(--signal-cream)]">
+                <p className="mt-2 font-display text-5xl text-(--signal-cream)">
                   {scholarshipSpec.annualCohortSize}
                 </p>
               </div>
-              <div className="rounded-[1.6rem] border border-white/10 bg-white/[0.03] p-5">
+              <div className="rounded-[1.6rem] border border-white/10 bg-white/3 p-5">
                 <p className="text-xs uppercase tracking-[0.28em] text-white/42">
                   Seed support
                 </p>
-                <p className="mt-2 font-display text-5xl text-[var(--signal-cream)]">
+                <p className="mt-2 font-display text-5xl text-(--signal-cream)">
                   ${scholarshipSpec.seedAmountUsd.toLocaleString()}
                 </p>
               </div>
-              <div className="rounded-[1.6rem] border border-white/10 bg-white/[0.03] p-5">
+              <div className="rounded-[1.6rem] border border-white/10 bg-white/3 p-5">
                 <p className="text-xs uppercase tracking-[0.28em] text-white/42">
                   Success signal
                 </p>
-                <p className="mt-2 font-display text-5xl text-[var(--signal-cream)]">
+                <p className="mt-2 font-display text-5xl text-(--signal-cream)">
                   10+
                 </p>
               </div>
@@ -70,7 +70,7 @@ export function ScholarshipSections({
           </MotionInView>
 
           <MotionInView delay={0.08}>
-            <div className="rounded-[2rem] border border-white/10 bg-[var(--surface)] p-7">
+            <div className="rounded-4xl border border-white/10 bg-surface p-7">
               <p className="text-xs uppercase tracking-[0.32em] text-white/44">
                 Scholar package
               </p>
@@ -95,7 +95,7 @@ export function ScholarshipSections({
             <p className="text-xs uppercase tracking-[0.32em] text-white/44">
               Focus areas
             </p>
-            <h2 className="mt-4 font-display text-5xl leading-[0.94] tracking-[-0.03em] text-[var(--signal-cream)] md:text-6xl">
+            <h2 className="mt-4 font-display text-5xl leading-[0.94] tracking-[-0.03em] text-(--signal-cream) md:text-6xl">
               Build where infrastructure can change the most outcomes.
             </h2>
           </MotionInView>
@@ -103,11 +103,11 @@ export function ScholarshipSections({
           <div className="mt-12 grid gap-5 lg:grid-cols-3">
             {focusAreas.map((area, index) => (
               <MotionInView key={area.id} delay={index * 0.06}>
-                <article className="rounded-[1.9rem] border border-white/10 bg-white/[0.03] p-7">
+                <article className="rounded-[1.9rem] border border-white/10 bg-white/3 p-7">
                   <p className="text-xs uppercase tracking-[0.28em] text-white/42">
                     Focus {String(index + 1).padStart(2, "0")}
                   </p>
-                  <h3 className="mt-3 font-display text-4xl leading-tight text-[var(--signal-cream)]">
+                  <h3 className="mt-3 font-display text-4xl leading-tight text-(--signal-cream)">
                     {area.title}
                   </h3>
                   <p className="mt-4 text-base leading-8 text-white/68">
@@ -129,7 +129,7 @@ export function ScholarshipSections({
             <p className="text-xs uppercase tracking-[0.32em] text-white/44">
               Eligibility
             </p>
-            <h2 className="mt-4 font-display text-5xl leading-[0.94] tracking-[-0.03em] text-[var(--signal-cream)] md:text-6xl">
+            <h2 className="mt-4 font-display text-5xl leading-[0.94] tracking-[-0.03em] text-(--signal-cream) md:text-6xl">
               Prioritize builders who already show motion.
             </h2>
             <ul className="mt-8 space-y-4">
@@ -148,11 +148,11 @@ export function ScholarshipSections({
             <p className="text-xs uppercase tracking-[0.32em] text-white/44">
               Selection process
             </p>
-            <div className="mt-4 rounded-[2rem] border border-white/10 bg-[var(--surface)] p-7">
+            <div className="mt-4 rounded-4xl border border-white/10 bg-surface p-7">
               <ol className="space-y-5">
                 {scholarshipSpec.cohortFlow.map((step, index) => (
                   <li key={step} className="grid grid-cols-[auto_1fr] gap-4">
-                    <span className="font-display text-4xl text-[var(--signal-cream)]">
+                    <span className="font-display text-4xl text-(--signal-cream)">
                       {String(index + 1).padStart(2, "0")}
                     </span>
                     <div>

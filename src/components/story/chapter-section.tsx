@@ -38,7 +38,7 @@ export function ChapterSection({
           <p className="text-xs uppercase tracking-[0.32em] text-white/42">
             {scene.eyebrow}
           </p>
-          <h2 className="mt-5 font-display text-5xl leading-[0.95] tracking-[-0.03em] text-[var(--signal-cream)] md:text-6xl">
+          <h2 className="mt-5 font-display text-5xl leading-[0.95] tracking-[-0.03em] text-(--signal-cream) md:text-6xl">
             {scene.title}
           </h2>
           <div className="mt-6 space-y-5 text-base leading-8 text-white/72 md:text-lg">
@@ -57,11 +57,11 @@ export function ChapterSection({
           className="relative mx-auto w-full max-w-xl"
           delay={0.08}
         >
-          <div className="rounded-[2rem] border border-white/12 bg-white/[0.03] p-4 shadow-[0_24px_80px_rgba(0,0,0,0.25)] backdrop-blur-xl">
-            <div className="rounded-[1.5rem] border border-white/10 bg-[#0e141c] p-4">
+          <div className="rounded-4xl border border-white/12 bg-white/3 p-4 shadow-[0_24px_80px_rgba(0,0,0,0.25)] backdrop-blur-xl">
+            <div className="rounded-3xl border border-white/10 bg-[#0e141c] p-4">
               <div className="mb-4 flex items-center justify-between text-[0.68rem] uppercase tracking-[0.3em] text-white/38">
                 <span>Story artifact</span>
-                <span>Placeholder visual</span>
+                <span>Personal visual</span>
               </div>
               <Image
                 src={scene.media.src}
@@ -69,7 +69,7 @@ export function ChapterSection({
                 width={860}
                 height={640}
                 priority={priority}
-                className="aspect-[4/3] w-full rounded-[1.15rem] border border-white/8 object-cover"
+                className="aspect-square w-full rounded-[1.15rem] border border-white/8 object-cover"
               />
               <p className="mt-4 text-sm leading-6 text-white/52">
                 {scene.media.label}
