@@ -64,8 +64,8 @@ export const storyScenes: StoryScene[] = [
     align: "right",
     media: {
       src: "/main/access.jpg",
-      alt: "A photo of a person thinking about how to get a computer",
-      label: "This was me thinking about how to get a computer.",
+      alt: "Sinclair thinking about how to get a computer",
+      label: "This was me — trying to figure out how to get a computer so I could actually build.",
     },
   },
   {

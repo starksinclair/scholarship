@@ -210,14 +210,18 @@ export default function ProposalPage() {
             </p>
           </div>
 
-          <div className="rounded-[1.6rem] border border-dashed border-black/20 bg-black/[0.02] p-6">
+          <div className="rounded-[1.6rem] border border-black/10 bg-white p-6 shadow-[0_24px_60px_rgba(0,0,0,0.06)]">
             <p className="text-xs uppercase tracking-[0.28em] text-black/48">
-              Reserved section
+              AI-use disclosure
             </p>
-            <p className="mt-3 font-display text-3xl">AI-use disclosure</p>
+            <p className="mt-3 font-display text-3xl">Transparency note</p>
             <p className="mt-3 text-sm leading-7 text-black/66">
-              Placeholder intentionally left here so the final disclosure and
-              prompt appendix can be added without changing the proposal layout.
+              AI tools were used during the creation of this submission to help
+              rephrase text for clarity and to ensure correct English grammar
+              and spelling. All ideas, scholarship design, personal narrative,
+              and data analysis are original work by the author. The website,
+              its code, and all interactive elements were built by the author
+              with AI-assisted development tooling.
             </p>
           </div>
         </section>

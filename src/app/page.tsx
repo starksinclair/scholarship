@@ -73,13 +73,37 @@ export default function Home() {
 
         <FounderClose founderClose={founderClose} />
       </div>
-     
     </main>
-     <footer>
-     <div className="text-center text-sm text-white/50 py-4">
-       <p>Copyright © {new Date().getFullYear()} <a href="https://www.sinclairnzenwata.com" target="_blank" style={{ textDecoration: "underline" }} rel="noopener noreferrer" className="text-white/70 hover:text-white">Sinclair Nzenwata</a>. All rights reserved. </p>
-     </div>
-   </footer>
+
+    <footer className="border-t border-white/8 bg-[rgba(9,10,12,1)]">
+      <div className="mx-auto max-w-7xl px-6 py-12 md:px-10 lg:px-16">
+        <div className="mb-8 rounded-2xl border border-white/10 bg-white/3 px-6 py-5">
+          <p className="text-xs uppercase tracking-[0.28em] text-white/42">
+            AI-use disclosure
+          </p>
+          <p className="mt-3 max-w-3xl text-sm leading-7 text-white/50">
+            AI tools were used during the creation of this submission to help
+            rephrase text for clarity and to ensure correct English grammar
+            and spelling. All ideas, scholarship design, personal narrative,
+            and data analysis are original work by the author. The website,
+            its code, and all interactive elements were built by the author
+            with AI-assisted development tooling.
+          </p>
+        </div>
+        <p className="text-center text-sm text-white/50">
+          Copyright © {new Date().getFullYear()}{" "}
+          <a
+            href="https://www.sinclairnzenwata.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white/70 underline underline-offset-4 decoration-white/20 hover:text-white"
+          >
+            Sinclair Nzenwata
+          </a>
+          . All rights reserved.
+        </p>
+      </div>
+    </footer>
    </>
   );
 }

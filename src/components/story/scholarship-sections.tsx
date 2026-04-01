@@ -12,12 +12,12 @@ export function ScholarshipSections({
 }: ScholarshipSectionsProps) {
   return (
     <>
-      <section className="border-y border-white/10 bg-[linear-gradient(180deg,rgba(18,13,12,0.96),rgba(20,14,12,0.94))]">
+      <section id="scholarship" className="border-y border-white/10 bg-[linear-gradient(180deg,rgba(18,13,12,0.96),rgba(20,14,12,0.94))]">
         <div className="mx-auto max-w-7xl px-6 py-24 md:px-10 lg:px-16">
           <MotionInView className="max-w-4xl">
-            {/* <p className="text-xs uppercase tracking-[0.32em] text-white/44">
+            <p className="text-xs uppercase tracking-[0.32em] text-white/44">
               Scholarship thesis
-            </p> */}
+            </p>
             <h2 className="mt-5 font-display text-[clamp(3.4rem,7vw,6.6rem)] leading-[0.9] tracking-[-0.04em] text-(--signal-cream)">
               {scholarshipSpec.thesis}
             </h2>
